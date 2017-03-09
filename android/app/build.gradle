@@ -89,6 +89,7 @@ android {
         }
         multiDexEnabled true
     }
+    /*
     signingConfigs {
         release {
             // To sign the app with production keystore, add the following
@@ -110,6 +111,7 @@ android {
             }
         }
     }
+    */
     splits {
         abi {
             reset()
@@ -122,7 +124,7 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
